@@ -1,0 +1,47 @@
+body {
+  background-color: white;
+}
+
+.inputbox {
+  background-color: #b30623;
+  width: auto;
+  height: 250px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputbox p {
+  font-size: 25px;
+  color: white;
+}
+
+.form-group {
+  align-items: start;
+  display: flex;
+  font-size: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+button {
+  margin-left: 330%;
+}
+
+label {
+  color: white;
+  font-size: 18px;
+}
+
+.form-group input {
+  width: 500px;
+  height: 400;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
