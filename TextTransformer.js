@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 
 const TextTransformer = () => {
   const [inputText, setInputText] = useState("");
@@ -47,3 +47,4 @@ const TextTransformer = () => {
 };
 
 export default TextTransformer;
+ */
