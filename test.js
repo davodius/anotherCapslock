@@ -1,23 +1,27 @@
-/* const prompt = require("prompt-sync")();
-let testText = prompt();
-//testText = "banan";
-console.log(testText);
- */
-const prompt = require("prompt-sync")();
+// npm install prompt-sync - to use the terminal prompts
+// let userInputText = "hello world";
+//
 
-function alternateCase(text) {
+// create empty string and looping through the string
+// if the index is even or zero it gets saved as uppercase to result
+// else it gets saved as a lower case to result
+function alternateCase(userInputText) {
   let result = "";
-  for (let i = 0; i < text.length; i++) {
+  for (let i = 0; i < userInputText.length; i++) {
     if (i % 2 === 0) {
-      result += text[i].toUpperCase();
+      result += userInputText[i].toUpperCase();
     } else {
-      result += text[i].toLowerCase();
+      result += userInputText[i].toLowerCase();
     }
   }
   return result;
 }
 
-// usage of the finished product
+const prompt = require("prompt-sync")();
 const inputText = prompt();
 const transformedText = alternateCase(inputText);
 console.log(transformedText); // Outputs: "HeLlO WoRlD"
+
+// usage of the finished product  ↓
+// reads input Text
+// Call alternateCase with the user input and store the result in transformedText
