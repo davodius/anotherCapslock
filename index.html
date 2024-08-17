@@ -3,23 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="TextTransformer.jsx"></script>
+    <title>Text Transformer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
       <div class="inputbox">
+        <p>Insert text to change:</p>
+        <!-- Text input -->
+        <input type="text" id="inputText" required />
+
+        <!-- Button to trigger transformation -->
+        <button type="button" onclick="transformText()">TrAnSlAtE</button>
+
+        <!-- Where the result will be displayed -->
+        <p id="output" style="margin-top: 25px; font-weight: normal"></p>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="TextTransformer.js"></script>
+  </body>
+</html>
+
+<!-- Old htmlcode below
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="TextTransformer.jsx"></script>
+   </head>
+  <body>
+    <div>
+      <div class="inputbox">
         <div><p>Insert text:</p></div>
-        <form action="/submit-form" method="post">
+        <form action="/submit" method="post">
             <div class="form-group">
               
               <input type="text" id="name" name="name" required />
               
               <div class="form-group">
                 <button type="submit" onclick="confirmation()">TrAnSlAtE</button>
+              
+              <script>
+                function confirmation(){
+                  
+                }
+              </script>
+              
               </div>
 
+
+              
             </div>
         </form>
         </div>
@@ -27,3 +66,4 @@
     </div>
   </body>
 </html>
+ -->
