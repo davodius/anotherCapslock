@@ -51,11 +51,16 @@ label {
 }
 
 #output {
-  width: 500px;
-  height: 400px;
+  max-width: 500px;
   padding: 10px;
+  word-wrap: break-word; /* Ensures long words wrap onto the next line */
+  white-space: normal; /* Allows text to wrap naturally */
+  line-height: 1.6; /* remember line height is how many times the font is the distance between ( 1 => 18px distance if fontsize = 18 ) */
+  justify-content: space-between;
   border-radius: 6px;
   font-size: 18px;
   border: none;
   color: black;
+  justify-content: center;
+  align-items: center;
 }
